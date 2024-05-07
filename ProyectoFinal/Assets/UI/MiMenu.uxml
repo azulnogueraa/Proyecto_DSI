@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MisEstilos.uss?fileID=7433441132597879392&amp;guid=1628539889d504217b9cb8fb4d8be154&amp;type=3#MisEstilos" />
+    <ui:VisualElement name="contenedor" class="contenedor" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/war.jpeg?fileID=2800000&amp;guid=536a71a3e36664a1eb35b1ddb7b0b462&amp;type=3#war&apos;); background-color: rgba(255, 242, 242, 0);">
+        <ui:VisualElement name="izquierda" class="izquierda" style="background-color: rgba(0, 0, 0, 0.87);">
+            <ui:VisualElement name="logo" class="logo" style="flex-grow: 1;" />
+            <ui:VisualElement name="botones" class="botones" style="flex-grow: 1;">
+                <ui:Button text="Jugar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="jugar" class="boton-menu" />
+                <ui:Button text="Opciones" parse-escape-sequences="true" display-tooltip-when-elided="true" name="opciones" class="boton-menu" />
+                <ui:Button text="Arsenal" parse-escape-sequences="true" display-tooltip-when-elided="true" name="arsenal" class="boton-menu" />
+                <ui:Button text="Ranking" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ranking" class="boton-menu" />
+                <ui:Button text="Salir" parse-escape-sequences="true" display-tooltip-when-elided="true" name="salir" class="boton-menu" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" class="footer">
+                <ui:VisualElement name="mira" class="footer-img" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/img/mira.png?fileID=2800000&amp;guid=8c2229daa80d749ea971c843886d175a&amp;type=3#mira&apos;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="derecha" class="derecha" style="width: auto;">
+            <ui:VisualElement name="hangar" class="hangar" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="ARSENAL" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hangar-titulo" class="hangar-titulo" style="color: rgb(206, 90, 255);" />
+                <ui:VisualElement name="hangar-armas" class="hangar-armas" style="flex-grow: 1; max-height: 600px; width: 1100px;">
+                    <ui:VisualElement name="armas-izquierda" class="armas-izquierda" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; max-width: 900px;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="arma1" class="boton-arma" style="background-image: url(&apos;project://database/Assets/UI/img/arma1.png?fileID=2800000&amp;guid=c9ea06207f8f04b3480136dd2cb126f4&amp;type=3#arma1&apos;);" />
+                        <ui:Button text="&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="arma3" class="boton-arma" style="background-image: url(&apos;project://database/Assets/UI/img/arma3.png?fileID=2800000&amp;guid=94438778879224682aea80c2cd591d31&amp;type=3#arma3&apos;);" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="arma4" class="boton-arma" style="background-image: url(&apos;project://database/Assets/UI/img/arma4.png?fileID=2800000&amp;guid=96ec7df277af14e45856b03531adb7d3&amp;type=3#arma4&apos;);" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="arma5" class="boton-arma" style="background-image: url(&apos;project://database/Assets/UI/img/arma5.png?fileID=2800000&amp;guid=f22b7e4357b75478293569106c591984&amp;type=3#arma5&apos;);" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="arma6" class="boton-arma" style="background-image: url(&apos;project://database/Assets/UI/img/arma6.png?fileID=2800000&amp;guid=fd8e02ff7f767450ea4540a30ad54fd8&amp;type=3#arma6&apos;);" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="arma2" class="boton-arma" style="background-image: url(&apos;project://database/Assets/UI/img/arma2.png?fileID=2800000&amp;guid=2effb42d4ce6c4f4b92d2da3598fa534&amp;type=3#arma2&apos;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="armas-derecha" class="armas-derecha" style="flex-grow: 1; justify-content: center;">
+                        <ui:Label tabindex="-1" text="Selecciona un arma:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="instruccion" class="instruccion" />
+                        <ui:Label tabindex="-1" text="Nombre del Arma" parse-escape-sequences="true" display-tooltip-when-elided="true" name="arma-nombre" class="arma-nombre" style="color: rgb(207, 91, 255);" />
+                        <ui:VisualElement name="estadistica" class="estadistica" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Tiempo de recarga" parse-escape-sequences="true" display-tooltip-when-elided="true" name="propiedad" class="propiedad" />
+                            <ui:ProgressBar value="22" name="tiempo-recarga" class="nivel-arma" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="estadistica" class="estadistica" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Tamaño de cargador" parse-escape-sequences="true" display-tooltip-when-elided="true" name="propiedad" class="propiedad" />
+                            <ui:ProgressBar value="22" name="tamanio-cargador" class="nivel-arma" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="estadistica" class="estadistica" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Daño a jugador" parse-escape-sequences="true" display-tooltip-when-elided="true" name="propiedad" class="propiedad" />
+                            <ui:ProgressBar value="22" name="danio-jugador" class="nivel-arma" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button text="Volver" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hangar-volver" class="hangar-volver" style="max-width: 300px; width: 150px; height: 80px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; font-size: 30px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

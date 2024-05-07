@@ -1,0 +1,287 @@
+VisualElement {
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+}
+
+.izquierda {
+    max-width: 500px;
+    min-width: 400px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.51);
+    align-items: center;
+    justify-content: space-between;
+    right: auto;
+    opacity: 1;
+}
+
+.derecha {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.71);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    align-self: center;
+    translate: 100% 0;
+    transition-duration: 0.5s;
+}
+
+.logo {
+    background-image: url('project://database/Assets/UI/img/soldierNoBgd.png?fileID=2800000&guid=0d3d56812b9bc49bab2b0a5c283feb15&type=3#soldierNoBgd');
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 400px;
+}
+
+.botones {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: auto;
+    align-items: center;
+}
+
+.boton-menu {
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+    position: relative;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-size: 25px;
+    -unity-font: url('project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=26f3050a376974ad98e8bd22ca608b20&type=3#NotInter-Regular');
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    -unity-font-style: bold;
+    letter-spacing: 10px;
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    overflow: visible;
+    scale: 1 1;
+}
+
+.boton-menu:hover {
+    background-color: rgb(176, 93, 211);
+    color: rgb(0, 0, 0);
+    width: 105%;
+    scale: 1 1.5;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+}
+
+.footer-img {
+    background-image: url('project://database/Assets/UI/img/mira.png?fileID=2800000&guid=8c2229daa80d749ea971c843886d175a&type=3#mira');
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.footer-img:hover {
+    background-image: url('project://database/Assets/UI/img/mira_hover.png?fileID=2800000&guid=f7b656020eb3444d98473fadc43e3469&type=3#mira_hover');
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.hangar {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hangar-titulo {
+    font-size: 50px;
+    color: rgb(185, 99, 221);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.hangar-armas {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 1100px;
+    max-height: none;
+}
+
+.armas-izquierda {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-arma {
+    width: 200px;
+    height: 200px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    opacity: 0.3;
+    -unity-background-image-tint-color: rgb(178, 177, 177);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.armas-derecha {
+    height: 100%;
+    flex-grow: 1;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+
+.instruccion {
+    color: rgb(255, 159, 0);
+    -unity-font-style: bold;
+    font-size: 20px;
+    -unity-text-align: upper-left;
+    letter-spacing: 3px;
+}
+
+.arma-nombre {
+    font-size: 30px;
+    color: rgb(148, 79, 177);
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.estadistica {
+    height: auto;
+    max-height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.propiedad {
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    font-size: 20px;
+    letter-spacing: -7px;
+}
+
+.nivel-arma {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.hangar-volver {
+}
+
+.boton-arma:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    opacity: 1;
+    scale: 1.3 1.3;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    width: 200px;
+    height: 200px;
+}
+
+.unity-progress-bar__container {
+    min-width: 100px;
+}
+
+.unity-progress-bar__progress {
+    color: rgb(207, 91, 255);
+    background-color: rgb(141, 74, 169);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.unity-progress-bar__background {
+    background-color: rgb(48, 48, 48);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.hangar-volver {
+    background-color: rgb(207, 91, 255);
+    max-width: 110px;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    font-size: 20px;
+}
+
+.derecha-activo {
+    translate: 0 0;
+}
